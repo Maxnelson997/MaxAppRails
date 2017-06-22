@@ -20,4 +20,28 @@ class PortfoliosController < ApplicationController
       end
     end
   end
+  
+  # GET /portfolios/1/edit
+  def edit
+      @portfolio_item = Portfolio.find(params[:id])
+  end
+  
+    # PATCH/PUT /portfolios/1
+  # PATCH/PUT /portfolios/1.json
+  def update
+    respond_to do |format|
+      if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+        format.html { redirect_to @portfolio_item, notice: 'Portfolio was successfully updated. Max is dope' }
+       # format.json { render :show, status: :ok, location: @portfolio_item }
+      else
+        format.html { render :edit }
+       # format.json { render json: @portfolio_item.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
+  
+    def portfolio_params
+      
+    end
 end
