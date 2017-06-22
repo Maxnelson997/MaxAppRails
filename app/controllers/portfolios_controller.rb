@@ -41,7 +41,4 @@ class PortfoliosController < ApplicationController
   end
   
   
-    def portfolio_params
-      
-    end
 end
