@@ -5,11 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+3.times do |topic|
+   Topic.create!(
+       title: "Topic #{topic}"
+   ) 
+end
 10.times do |blog|
     Blog.create!(
         title: "My Blog Post #{blog}",
         body: "I have always been interested in how the world and the things within it work. This has driven me to learn as much as I can every day. This passion I have for learning has allowed me to create wonderful things and enjoy the process in creating these things. I work great with a team and tend to get things done quick because of these qualities. 
-        I look forward to obtaining my masters in computer science and minor in mathematics The languages I develop in at my current job include PHP, HTML, CSS, Javascript, and Swift. Programming languages I have but do not use at my job include C++, C# and Java."
+        I look forward to obtaining my masters in computer science and minor in mathematics The languages I develop in at my current job include PHP, HTML, CSS, Javascript, and Swift. Programming languages I have but do not use at my job include C++, C# and Java.",
+        topic_id: Topic.last.id
     )
 end
 
@@ -23,13 +30,23 @@ end
 puts "5 skills created"
 
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
    Portfolio.create!(
       title: "Portfolio title: #{portfolio_item}",
-      subtitle: "My swagtastic service",
+      subtitle: "Ruby on Rails",
       body: "unce unce unce unce unce",
       main_image: "http://via.placeholder.com/650x450",
       thumb_image: "http://via.placeholder.com/350x150" 
       ) 
 end
-puts "9 portfolio items created"
+puts "8 portfolio items created"
+
+8.times do |portfolio_item|
+   Portfolio.create!(
+      title: "Portfolio title: #{portfolio_item}",
+      subtitle: "Angular",
+      body: "tf???",
+      main_image: "http://via.placeholder.com/650x450",
+      thumb_image: "http://via.placeholder.com/350x150" 
+      ) 
+end
