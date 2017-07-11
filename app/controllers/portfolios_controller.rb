@@ -16,7 +16,7 @@ class PortfoliosController < ApplicationController
   # POST /blogs
   # POST /blogs.json
   def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+    @portfolio_item = Portfolio.new(portfolio_params)
     respond_to do |format|
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
@@ -35,7 +35,7 @@ class PortfoliosController < ApplicationController
   # PATCH/PUT /portfolios/1.json
   def update
     respond_to do |format|
-      if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+      if @portfolio_item.update(portfolio_params)
         format.html { redirect_to @portfolio_item, notice: 'Portfolio was successfully updated. Max is dope' }
        # format.json { render :show, status: :ok, location: @portfolio_item }
       else
@@ -65,6 +65,15 @@ class PortfoliosController < ApplicationController
   end
 
   
+  private 
+  
+  def portfolio_params
+    params.require(:portfolio).permit(:title,
+                                      :subtitle,
+                                      :body, 
+                                      :image,
+                                      technologies_attributes: [:name])
+  end
   
   
   
