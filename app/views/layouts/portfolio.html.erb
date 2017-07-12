@@ -19,13 +19,9 @@
 
     <%= login_helper %>
     
-
-    
     <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
     <%= yield %>
     
-    <% if session[:source] %>
-    Thanks for visiting me from <%= session[:source] %>
-    <% end %>
+  <%= source_helper("application") %>
   </body>
 </html>
