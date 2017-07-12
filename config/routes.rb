@@ -8,8 +8,7 @@ Rails.application.routes.draw do
   # devise_for :users
   resources :portfolios, except: [:show]
   resources :blogs
-  
-  
+
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
 
