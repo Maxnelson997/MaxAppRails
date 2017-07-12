@@ -19,10 +19,14 @@
   <%= render "shared/nav", location: 'top'%>
     
   <%= login_helper %>
-  
+
     <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
     <%= yield %>
     
+    <br><hr>
+    <%= @copyright %>
+    <br>
+    <br><br>
     <%= source_helper("application") %>
   </body>
 </html>
