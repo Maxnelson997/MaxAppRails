@@ -3,6 +3,8 @@
 <h1>Blogs</h1>
 
 <table>
+  
+  
   <thead>
     <tr>
       <th>Blog Date</th>
@@ -12,10 +14,14 @@
     </tr>
   </thead>
 
-  <tbody>
-    <%= render @blogs %>
-  </tbody>
 </table>
+
+
+  <tbody>
+    <% cache do %>
+      <%= render partial: @blogs, spacer_template: 'blog_ruler' %>
+    <% end %>
+  </tbody>
 
 <br>
 
