@@ -1,27 +1,28 @@
+
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
-   <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" %>
+      
+    <p class = "notice"><%= notice %></p>
+    <p class = "alert"><%= alert %></p>
+    
+    <%= render "shared/nav", location: 'top'%>
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    
-    <p class = "notice"><%= notice %></p>
-    <p class = "alert"><%= alert %></p>
-    
-    <%= render "shared/nav", location: 'top'%>
 
-    <%= login_helper %>
-    
-    <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
+
     <%= yield %>
-    
-  <%= source_helper("application") %>
+
   </body>
 </html>
