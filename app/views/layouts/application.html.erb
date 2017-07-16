@@ -13,21 +13,25 @@
   </head>
 
   <body>
-    <p>This 'P' tag is in the application.html.erb file in view/layouts. Stuff in this file will show on errrr page mate.</p>
-    <p class = "notice"><%= notice %></p>
-    <p class = "alert"><%= alert %></p>
-    
-  <%= render "shared/nav", location: 'top'%>
-    
-  <%= login_helper %>
+    <div class="site-wrapper">
 
-    <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
-    <%= yield %>
-    
-    <br><hr>
-    <%= @copyright %>
-    <br>
-    <br><br>
-    <%= source_helper("application") %>
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+          <%= render "shared/application_nav"%>
+            
+          <%= login_helper %>
+        
+          <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
+          <%= yield %>
+            
+          <br><hr>
+          <%= @copyright %>
+          <br>
+          <br><br>
+          <%= source_helper("application") %>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
