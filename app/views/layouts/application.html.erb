@@ -20,15 +20,14 @@
         <div class="cover-container">
           <%= render "shared/application_nav"%>
             
-          <%= login_helper %>
-        
+ 
           <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
           <%= yield %>
             
-          <br><hr>
-          <%= @copyright %>
-          <br>
-          <br><br>
+  
+          
+          <%= render "shared/application_footer"%>
+
           <%= source_helper("application") %>
           </div>
         </div>
