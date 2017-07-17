@@ -3,7 +3,7 @@
 <div class="album text-muted">
   <div class="container">
       <%= link_to "Create New Item", new_portfolio_url if logged_in?(:site_admin) %>
-    <div class="row">
+    <div class="row sortable">
         
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>

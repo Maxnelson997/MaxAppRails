@@ -1,4 +1,3 @@
-alert("whats goin on u guys")
 
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
