@@ -63,11 +63,11 @@ module ApplicationHelper
        anlert = (flash[:alert] || flash[:error] || flash[:notice])
        
        if anlert
-          alert_generator alert
+          alert_generator anlert
        end
    end
    
    def alert_generator msg 
-      js add_gritter(error, title: "Max Nelson Portfolio", sticky: false, time: 3000) 
+      js add_gritter(msg, title: "Max Nelson Portfolio", sticky: false, time: 3000) 
    end
 end
