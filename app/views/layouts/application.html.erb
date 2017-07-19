@@ -36,6 +36,8 @@
           <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
           <%= yield %>
           <%= render "shared/application_footer"%>
+          
+          <%= render "shared/alerts" %>
 
           <%= source_helper("application") %>
           </div>
