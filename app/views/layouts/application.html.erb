@@ -14,12 +14,14 @@
 
   <body>
     <div class="site-wrapper">
-
       <div class="site-wrapper-inner">
-
         <div class="cover-container">
 
-          
+          <!--<div id="background">-->
+            
+            
+          <!--</div>-->
+
           <%= video_tag(
               'HardDrivePhotojpeg.mp4',
               id: 'background',
@@ -29,16 +31,10 @@
               poster: 'max.jpg'
             )
             %>
-          
-          
+
           <%= render "shared/application_nav"%>
-            
- 
           <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
           <%= yield %>
-            
-  
-          
           <%= render "shared/application_footer"%>
 
           <%= source_helper("application") %>
