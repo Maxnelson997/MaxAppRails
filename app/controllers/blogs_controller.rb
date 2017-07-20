@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.page(params[:page]).per(2)
+    @blogs = Blog.page(params[:page]).per(5)
     @page_title = "My Portfolio Blog"
   end
 
@@ -15,6 +15,7 @@ class BlogsController < ApplicationController
   def show
     @blog = Blog.includes(:comments).friendly.find(params[:id])
     @comment = Comment.new
+
     @page_title = @blog.title
     @seo_keywords = @blog.body
   end
