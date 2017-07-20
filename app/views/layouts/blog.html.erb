@@ -14,12 +14,23 @@
   </head>
 
   <body>
+          <%= video_tag(
+              'HardDrivePhotojpeg.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'max.jpg'
+            )
+            %>
 
     <!-- Start of nav -->
     <%= render 'shared/blog_nav' %>
     <%= render 'shared/blog_masthead' %>
+    
+    
     <!-- End of nav -->
-    <div class="container">
+    <div class="container unce">
       <div class="row">
         <%= yield %>
         <%= render 'shared/blog_sidebar' %>
