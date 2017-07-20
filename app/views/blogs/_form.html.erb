@@ -10,6 +10,28 @@
   </div>
 
   <div class="form-group">
+    <%= f.label :topic_id %>
+    <%
+     the_id = 4
+     unless blog.topic.nil? 
+       unless blog.topic.id.nil?
+       the_id = blog.topic.id
+       end
+     end
+    %>
+    <%= f.collection_select(:topic_id, Topic.all, :id, :title,
+                              {
+                                selected: the_id,
+                                include_blank: true
+                              },
+                              class: 'form-control'
+                            )
+    %>
+    
+
+  </div>
+
+  <div class="form-group">
     <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Content" %>
   </div>
 
