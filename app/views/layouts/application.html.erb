@@ -17,18 +17,18 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
-          <div id="background">
+          <!--<div id="background">-->
           
-          </div>
+          <!--</div>-->
 
-          <%= #video_tag(
-          #     'HardDrivePhotojpeg.mp4',
-          #     id: 'background',
-          #     autoplay: true,
-          #     loop: true,
-          #     muted: true,
-          #     poster: 'max.jpg'
-          #   )
+          <%= video_tag(
+              'HardDrivePhotojpeg.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'max.jpg'
+            )
             %>
 
           <%= render "shared/application_nav"%>

@@ -104,6 +104,14 @@ body {
   }
 }
 
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 65rem;
+  }
+}
+
 
 /*
  * Cover
@@ -210,4 +218,19 @@ body {
 
 .app-footer {
   color: white;
+}
+
+.tech-news {
+  color: dimgray;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: lime;
+  margin: 20px;
+}
+
+.tech-news > .card {
+  background-color: white; //gainsboro
+  padding: 20px;
 }

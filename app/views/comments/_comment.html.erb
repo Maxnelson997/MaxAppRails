@@ -1,0 +1,19 @@
+<div class="comment-card">
+  <div class="card"> <!--card-inverse" style="background-color: #333; border-color: #333;"-->
+    <div class="card-block">
+      <div class="row">
+        <div class="col-md-1">
+          <%= gravatar_helper comment.user %>
+        </div>
+        <div class="col-md-10">
+          <span class="comment-name"><%= comment.user.name %>:</span>
+          <span><%= comment.context %></span>
+          
+          <div class="comment-time">
+            <%=  distance_of_time_in_words(comment.created_at, Time.now)%> ago
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
