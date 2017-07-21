@@ -9,14 +9,35 @@
                 
                 <%= image_tag "max.jpg", width: 400, alt: "profile image" %>
                 <!--<img src="" width="300" alt="Profile Image">-->
+                
+                    <div class="skills">
+                        <% @skills.each do |s| %>
+                            <div class="skill">
+                                <h4><%= s.title %></h4>
+                                <div class="progress">
+                                    <div 
+                                        class="progress-bar progress-bar-striped bg-warning"
+                                        role="progressbar"
+                                        aria-valuenow="<%= s.percent_utilized %>"
+                                        aria-valuemax="100"
+                                        style="width: <%= s.percent_utilized %>%"
+                                    >
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        <% end %>
+                    </div>
+        
+
             </div>
-            <div class="col-md-6 abt-me">
+            <div class='col-md-6 abt-me'>
                 <p>I am 19 years old and I develop iOS apps and Websites. I attend Utah Valley University studying Computer Science. I work at Gadzoom.net as an iOS Developer</p>
             
                 <p>
                     <button
                         class="btn btn-primary"
-                        type="button"
+                        type='button'
                         data-toggle="collapse"
                         data-target="#jobHistory"
                         aria-expanded="false"
