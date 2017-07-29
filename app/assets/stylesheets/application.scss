@@ -248,7 +248,11 @@ h6, .h6 {
   padding: 20px;
 }
 
-.app-card-container > .card{
+.app-card-container {
+  margin: 100px;
+}
+
+.app-card-container > .card {
   padding: 40px 20px;
   background-color: #333; 
   border-color: #333;
@@ -257,6 +261,7 @@ h6, .h6 {
 .app-card-container a {
   color: lime;
 }
+
 
 .card-block {
   margin: 5px 0;
@@ -269,4 +274,5 @@ h6, .h6 {
 .skill h4 {
   text-align: left;
 }
+
 
