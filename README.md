@@ -1,24 +1,17 @@
-# README
+![logo](https://s3.amazonaws.com/testthememebucket/DSC00011.jpg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Max Dev
 
-Things you may want to cover:
+This is my portfolio website. Visit Maxnelsondevelopment.com to view it.
+I created my new portfolio webiste with rails.
 
-* Ruby version
+Some cool things used
 
-* System dependencies
+* Action Cable for live blog comment updates
 
-* Configuration
+* Bootstrap
 
-* Database creation
+* nine billion gems
 
-* Database initialization
+* Rails
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
