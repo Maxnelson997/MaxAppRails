@@ -1,12 +1,12 @@
-<div class="card bg-inverse">
+<div class="card bg-inverse animated slideInLeft">
 	
 	<div class="col-md-12">
-  <div class="col-md-4 card animated swing" data-id="<%= portfolio_item.id %>">
+  <div class="col-md-4 card slideInLeft" data-id="<%= portfolio_item.id %>">
     <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %>
   </div>
 
   <div class="col-md-5 card bg-inverse">
-  	  <p class="card-text animated swing">
+  	  <p class="card-text slideInLeft">
       <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
     </p>
   </div>
