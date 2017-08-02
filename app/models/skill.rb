@@ -5,4 +5,5 @@ class Skill < ApplicationRecord
     def set_defaults 
         self.badge ||= "http://via.placeholder.com/250x250"
     end
+    
 end
