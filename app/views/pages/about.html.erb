@@ -5,64 +5,52 @@
         <h1>Code God</h1>
         <hr>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">  <%= image_tag "max.jpg", width: '100%', alt: "profile image" %></div>
+            <div class="col-md-3"></div>
+        </div>
+        <!-- new row -->
+        <div class="separator row">
+            <div class="col-md-12">
                 
-                <%= image_tag "max.jpg", width: 400, alt: "profile image" %>
-                <!--<img src="" width="300" alt="Profile Image">-->
-                
-                    <div class="skills">
-                        <% @skills.each do |s| %>
-                            <div class="skill">
-                                <h4><%= s.title %></h4>
-                                <div class="progress">
-                                    <div 
-                                        class="progress-bar progress-bar-striped bg-warning"
-                                        role="progressbar"
-                                        aria-valuenow="<%= s.percent_utilized %>"
-                                        aria-valuemax="100"
-                                        style="width: <%= s.percent_utilized %>%"
-                                    >
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        <% end %>
-                    </div>
-        
-
             </div>
-            <div class='col-md-6 abt-me'>
+        </div>
+        <!-- new row -->
+        <div class="row">
+            <div class='col-md-12 abt-me'>
                 <p>I am 19 years old and I develop iOS apps and Websites. I attend Utah Valley University studying Computer Science. I work at Gadzoom.net as an iOS Developer</p>
-            
-                <p>
-                    <button
-                        class="btn btn-primary"
+                <div class="row">
+                    <div class="col-md-4">
+                        <button
+                        class="btn btn-primary btn-block abt-btn"
                         type='button'
                         data-toggle="collapse"
                         data-target="#jobHistory"
                         aria-expanded="false"
                         aria-controller="jobHistory"
-                    >Job History</button>
-                    
-                    <button
-                        class="btn btn-primary"
+                       >Job History</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button
+                        class="btn btn-primary btn-block abt-btn"
                         type="button"
                         data-toggle="collapse"
                         data-target="#educationHistory"
                         aria-expanded="false"
                         aria-controller="educationHistory"
                     >Education</button>
-                    
-                    <button
-                        class="btn btn-primary"
+                    </div>
+                    <div class="col-md-4">
+                        <button
+                        class="btn btn-primary btn-block abt-btn"
                         type="button"
                         data-toggle="collapse"
                         data-target="#appHistory"
                         aria-expanded="false"
                         aria-controller="appHistory"
                     >App Development</button>
-                </p>
-
+                    </div>
+                </div>
                 <p>
                     <div class="collapse" id="jobHistory">
                         <div class="card card-block">
@@ -114,6 +102,31 @@
                 </p>
                 
             </div>
+        </div>
+                <!-- new row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="skills">
+                    <% @skills.each do |s| %>
+                        <div class="skill">
+                            <h4><%= s.title %></h4>
+                            <div class="progress">
+                                <div 
+                                    class="progress-bar progress-bar-striped bg-warning"
+                                    role="progressbar"
+                                    aria-valuenow="<%= s.percent_utilized %>"
+                                    aria-valuemax="100"
+                                    style="width: <%= s.percent_utilized %>%"
+                                >
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
         </div> 
+
+
     </div>
 </div>

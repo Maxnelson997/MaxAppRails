@@ -7,6 +7,7 @@
 
   <div class="col-md-5 card bg-inverse">
   	  <p class="card-text slideInLeft">
+      <%= puts portfolio_item.title %>
       <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
     </p>
   </div>

@@ -14,14 +14,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>    
-    <div id="backk">
-      
-    </div>
+  <body>   
+
     <!-- start of navigation -->
-    <%= render "shared/portfolio_nav" %>
+    <%= render "shared/application_nav" %>
     <!-- end of navigation -->
 
+    <div class="col-md-12">
+
+        <div class="cover-container">
 
     <!-- start of masthead -->
     <%= render "shared/porfolio_masthead" %> <!--unless logged_in?(:site_admin)-->
@@ -34,5 +35,9 @@
     <!-- end of footer -->
 
     <%= source_helper("application") %>
+    
+        </div>
+    </div>
+
   </body>
 </html>

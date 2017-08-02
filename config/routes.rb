@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'tech-news', to: 'pages#tech_news'
+  get 'portfolio/:id/delete', to: 'portfolios#delete', as: 'portfolio_delete'
 
   resources :blogs do
     member do

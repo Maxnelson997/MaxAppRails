@@ -52,8 +52,15 @@ class PortfoliosController < ApplicationController
   def show
   end
 
+  def delete
+    puts params[:id]
+    destroy
+  end
+
   def destroy
+    puts "waht the junk"
     # Destroy/delete the record
+    @portfolio_item = Portfolio.find(params[:id])
     @portfolio_item.destroy
 
     # Redirect

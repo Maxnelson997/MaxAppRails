@@ -71,7 +71,8 @@ h6, .h6 {
 
 /* Padding for spacing */
 .inner {
-  padding: 2rem;
+  padding: 100px;
+  margin: 100px;
 }
 
 
@@ -201,6 +202,8 @@ h6, .h6 {
 
 .app-footer {
   color: white;
+  position: relative;
+  bottom: 0;
 }
 
 .tech-news {
@@ -245,5 +248,13 @@ h6, .h6 {
 }
 
 
+/*about*/
 
+.prof-image {
+  width:100%;
 
+}
+
+.abt-btn {
+  margin: 10px 0;
+}
