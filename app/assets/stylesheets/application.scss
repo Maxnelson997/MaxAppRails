@@ -88,6 +88,7 @@ h6, .h6 {
 }
 
 .nav-masthead .nav-link {
+
   padding: .25rem 0;
   font-weight: bold;
   color: rgba(255,255,255,.5);
@@ -149,39 +150,7 @@ h6, .h6 {
 }
 
 
-/*
- * Affix and center
- */
 
-@media (min-width: 40em) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 62em) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 75rem;
-  }
-}
 
 
 
