@@ -57,12 +57,29 @@ h6, .h6 {
   border: 0;
 }
 
+#backk {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('hero.jpg') no-repeat;
+  background-size: cover;
+}
+//DSC08543-2
+
 .card > img {
-  margin-bottom: .75rem;
+  margin-bottom: 0rem;
 }
 
 .card-text {
-  font-size: 85%;
+  font-size: 100%;
+  color: white;
 }
 
 footer {
@@ -77,5 +94,5 @@ footer p {
 // custom styles my dude
 
 .portfolio-container {
-  padding-top: 20px;
+  padding-top: 0px;
 }

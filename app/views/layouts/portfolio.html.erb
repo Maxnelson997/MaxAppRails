@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <%= stylesheet_link_tag 'animations' %>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
@@ -13,13 +14,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body>    
+    <div id="backk">
+      
+    </div>
     <!-- start of navigation -->
     <%= render "shared/portfolio_nav" %>
     <!-- end of navigation -->
 
+
     <!-- start of masthead -->
-    <%= render "shared/porfolio_masthead" unless logged_in?(:site_admin) %>
+    <%= render "shared/porfolio_masthead" %> <!--unless logged_in?(:site_admin)-->
     <!-- end of masthead -->
 
     <%= yield %>
