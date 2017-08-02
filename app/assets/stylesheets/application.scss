@@ -40,6 +40,8 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
+
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -73,6 +75,9 @@ h6, .h6 {
 .inner {
   padding: 100px;
   margin: 100px;
+}
+.nav-list {
+  text-align: left;
 }
 
 
@@ -222,7 +227,7 @@ h6, .h6 {
 }
 
 .app-card-container {
-  margin: 20px;
+  margin: 100px 20px;
 
 }
 
@@ -253,9 +258,19 @@ h6, .h6 {
 
 .prof-image {
   width:100%;
-
 }
 
 .abt-btn {
   margin: 10px 0;
 }
+
+/*contact*/
+.map-row {
+  margin:-top 55px;
+}
+
+.work-info > .sec {
+  margin-top: 15px;
+}
+
+
