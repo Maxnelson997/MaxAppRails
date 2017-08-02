@@ -73,9 +73,11 @@ h6, .h6 {
 
 /* Padding for spacing */
 .inner {
-  padding: 100px;
-  margin: 100px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+
 }
+
 .nav-list {
   text-align: left;
 }
@@ -95,7 +97,7 @@ h6, .h6 {
 
 .nav-masthead .nav-link {
 
-  padding: .25rem 0;
+  padding: .15rem 0;
   font-weight: bold;
   color: rgba(255,255,255,.5);
   background-color: transparent;
@@ -107,31 +109,13 @@ h6, .h6 {
   border-bottom-color: rgba(255,255,255,.25);
 }
 
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
 
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
 
-@media (min-width: 62em) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 65rem;
-  }
-}
 
 
 /*
@@ -151,9 +135,18 @@ h6, .h6 {
  * Footer
  */
 
+.masthead {
+  position: fixed;
+  top: 0;
+}
 .mastfoot {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   color: rgba(255,255,255,.5);
 }
+
+
 
 
 
@@ -272,5 +265,4 @@ h6, .h6 {
 .work-info > .sec {
   margin-top: 15px;
 }
-
 

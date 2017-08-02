@@ -15,16 +15,9 @@
   </head>
 
   <body>
+   
 
 
-    <%= render "shared/application_nav"%>
-    <div class="col-md-12">
-
-        <div class="cover-container">
-          <!--<div id="background">-->
-          
-          <!--</div>-->
-          <!--HardDrivePhotojpeg-->
           <%= video_tag(
               'Street-View.mp4',
               id: 'background',
@@ -34,21 +27,17 @@
               poster: 'street.jpg'
             )
             %>
+          <%= render "shared/application_nav" %>
 
-          <!--Yield INJECTS code from other files/templates, such as edit.html.erb on blogs or portfolios, or home.html.erb, or any other template! Dope ASF!-->
           <%= yield %>
 
-     
-          
+          <%= render "shared/application_footer" %>
+
           <%= alerts %>
-       <%= render "shared/application_footer"%>
 
-          <%= source_helper("application") %>
-          </div>
-  
-      </div>
-
+   
   </body>
+
 
 
 </html>
