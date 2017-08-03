@@ -15,29 +15,31 @@
   </head>
 
   <body>
-   
+  <%= render "shared/application_nav" %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <%= video_tag(
+          'Street-View.mp4',
+          id: 'background',
+          autoplay: true,
+          loop: true,
+          muted: true,
+          poster: 'street.jpg'
+        )
+        %>
 
+        <%= yield %>
+      </div>
 
-          <%= video_tag(
-              'Street-View.mp4',
-              id: 'background',
-              autoplay: true,
-              loop: true,
-              muted: true,
-              poster: 'street.jpg'
-            )
-            %>
-          <%= render "shared/application_nav" %>
+    </div>
+    <div class="row">
+      <div class="col-md-12 py-12">
+        <%= render "shared/application_footer" %>
 
-          <%= yield %>
-
-          <%= render "shared/application_footer" %>
-
-          <%= alerts %>
-
-   
+        <%= alerts %>
+      </div>
+    </div>
+  </div>
   </body>
-
-
-
 </html>

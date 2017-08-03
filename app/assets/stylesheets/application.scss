@@ -138,7 +138,7 @@ h6, .h6 {
 .masthead {
   position: fixed;
   top: 0;
-  
+
 }
 .mastfoot {
   width: 100%;
@@ -152,7 +152,9 @@ h6, .h6 {
 
 
 
-
+.abt {
+  color: white;
+}
 
 /*
  * Custom Styles
@@ -221,23 +223,25 @@ h6, .h6 {
 }
 
 .app-card-container {
-  margin: 100px 250px;
+  margin: 50px 250px;
+}
 
+.home-container {
+  color: clear;
 }
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
     .app-card-container {
-        margin: 100px 150px;
+      margin: 50px 20px;
     }
-@media only screen and (max-width: 700px) {
-    .app-card-container {
-        margin: 100px 20px;
-    }
-}
+
 }
 
+.homespacer {
+  height: 500px;  
+}
 
 .app-card-container > .card {
   padding: 40px 20px;
