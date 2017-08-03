@@ -87,6 +87,24 @@ h6, .h6 {
  * Header
  */
 
+.navbar-style {
+  background-color: rgba(175,175,175,0.76);
+  color: #333; 
+  border-color: #333;
+}
+
+.navbar-default .navbar-text {
+  color: #333
+}
+
+.navitem-space {
+  margin: 0px 5px;
+}
+
+.nav-right {
+  text-align: right;
+}
+
 .masthead {
   margin-bottom: 2rem;
 }
@@ -148,14 +166,6 @@ h6, .h6 {
 }
 
 
-
-
-
-
-.abt {
-  color: white;
-}
-
 /*
  * Custom Styles
  */
@@ -165,8 +175,17 @@ h6, .h6 {
   text-align: left;
 }
 
+.home-about {
+  background-color: rgba(167,239,255, 0.4); 
+  border-color: rgba(167,239,255, 0); 
+}
+
 .auth-links a {
   color: black;
+}
+
+.space-row {
+  height: 500px;
 }
 
 .register-text {
@@ -222,6 +241,8 @@ h6, .h6 {
   padding: 20px;
 }
 
+
+
 .app-card-container {
   margin: 50px 250px;
 }
@@ -232,7 +253,7 @@ h6, .h6 {
 
 
 
-@media only screen and (max-width: 1500px) {
+@media only screen {
     .app-card-container {
       margin: 50px 20px;
     }
@@ -243,17 +264,21 @@ h6, .h6 {
   height: 500px;  
 }
 
+
 .app-card-container > .card {
   padding: 40px 20px;
-  background-color: #333; 
+  background-color: rgba(175,175,175,0.76);
+  color: white; 
   border-color: #333;
 }
 
-.app-card-container a {
+
+.emailme {
   color: lime;
 }
 
 .card-block {
+
   margin: 5px 0;
 }
 

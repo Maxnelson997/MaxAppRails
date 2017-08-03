@@ -58,6 +58,8 @@ module ApplicationHelper
     
     nav_links.html_safe
    end
+
+   
    
    def active? path
        "active" if current_page? path
