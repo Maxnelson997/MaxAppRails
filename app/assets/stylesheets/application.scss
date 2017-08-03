@@ -77,8 +77,8 @@ h6, .h6 {
   margin-bottom: 10px;
 
 }
-
-.nav-list {
+ 
+.nav-list > span{
   text-align: left;
 }
 
@@ -98,11 +98,17 @@ h6, .h6 {
 }
 
 .navitem-space {
-  margin: 0px 5px;
+  margin: 0px 15px;
+
+  text-align: left;
 }
 
 .nav-right {
-  text-align: right;
+  text-align: center;
+}
+
+.nav-left {
+  text-align: left;
 }
 
 .masthead {
