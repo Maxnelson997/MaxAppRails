@@ -120,7 +120,6 @@ h6, .h6 {
 }
 
 .nav-masthead .nav-link {
-
   padding: .15rem 0;
   font-weight: bold;
   color: rgba(255,255,255,.5);
@@ -224,6 +223,11 @@ h6, .h6 {
   background: image-url('street.jpg') no-repeat;
   background-size: cover;
 }
+.about-max-image {
+  background: image-url('mn.jpg') no-repeat;
+    background-size: 175%;
+}
+
 //DSC08543-2
 
 .app-footer {
@@ -247,8 +251,6 @@ h6, .h6 {
   padding: 20px;
 }
 
-
-
 .app-card-container {
   margin: 50px 250px;
 }
@@ -261,9 +263,8 @@ h6, .h6 {
 
 @media only screen {
     .app-card-container {
-      margin: 50px 20px;
+      margin: 75px 25px;
     }
-
 }
 
 .homespacer {
@@ -274,7 +275,7 @@ h6, .h6 {
 .app-card-container > .card {
   padding: 40px 20px;
   background-color: rgba(175,175,175,0.76);
-  color: white; 
+  color: #333; 
   border-color: #333;
 }
 
